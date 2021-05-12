@@ -62,12 +62,13 @@ function App() {
 
   return (
     <div className='App'>
-      <span>{Initializing ? `Initializing` : 'ready'}</span>
-      <div className='position-flex justify-content-center '>
+
+      <span><h6 style={{ color: 'red' }} >  {Initializing ? `Yapay Zeka Yüklenene Kadar Bekleyin` : 'Hazır'}</h6></span>
+      <div className='parent-div'>
         <video ref={videoRef} autoPlay muted height={videoHeight} width={videoWidth} onPlay={handleVideoOnPlay} />
-        <canvas ref={canvasRef} className='position-absolute' />
+        <canvas ref={canvasRef} className='canvas' />
       </div>
-    </div>
+    </div >
   );
 }
 

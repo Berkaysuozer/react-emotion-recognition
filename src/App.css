@@ -2,12 +2,10 @@
   text-align:center;
 }
 
-.position-flex{
+ .parent-div {
   display:flex;
-}
-.justify-content-center  {
   justify-content:center
 }
-.position-absolute{
+.canvas{
   position:absolute;
 }

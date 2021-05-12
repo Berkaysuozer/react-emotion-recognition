@@ -1,0 +1,47 @@
+.logodiv{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.logo{
+    
+    width: 370px;
+    height: 130px;
+
+}
+
+.modal-div{
+height:  560px;
+width : 650px;
+border : 3px solid black;
+text-align: center;
+border-radius: 20px;
+
+
+}
+.modalheader{
+display:flex;
+justify-content: center;
+}
+
+
+
+.topdiv{
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: lightgrey;
+    color: black;
+    text-align: center;
+    border-top: 2px solid  grey;
+}
