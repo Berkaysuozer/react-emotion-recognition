@@ -2,7 +2,7 @@ import React from 'react';
 import logo from './logo192.png'
 import App from './App'
 import './Home.css'
-import { Button, Modal } from 'react-bootstrap';
+
 const Home = () => {
 
 
