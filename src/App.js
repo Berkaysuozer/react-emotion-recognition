@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './App.css';
-
 import * as faceapi from 'face-api.js';
 
 
@@ -10,6 +9,9 @@ function App() {
   const videoHeight = 480;
   const videoWidth = 640;
   const canvasRef = useRef();
+  let renk = "red";
+  { Initializing ? renk = "red" : renk = "green" }
+
   useEffect(() => {
     const loadModels = async () => {
       const MODEL_URL = process.env.PUBLIC_URL + './models';
@@ -62,8 +64,7 @@ function App() {
 
   return (
     <div className='App'>
-
-      <span><h6 style={{ color: 'red' }} >  {Initializing ? `Yapay Zeka Yüklenene Kadar Bekleyin` : 'Hazır'}</h6></span>
+      <span><h4 style={{ color: renk }} >  {Initializing ? `Yapay Zeka Yüklenene Kadar Bekleyin` : 'Hazır'}</h4></span>
       <div className='parent-div'>
         <video ref={videoRef} autoPlay muted height={videoHeight} width={videoWidth} onPlay={handleVideoOnPlay} />
         <canvas ref={canvasRef} className='canvas' />
