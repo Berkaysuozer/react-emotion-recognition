@@ -11,7 +11,7 @@ const Home = () => {
 
         <div>
             <div className='logodiv'>
-                <img src={logo} className='logo' alt='anan'></img>
+                <img src={logo} className='logo' alt='logo'></img>
                 <h3>T.C.</h3>
                 <h4>KÜTAHYA DUMLUPINAR ÜNİVERSİTESİ</h4>
                 <h4>MÜHENDİSLİK FAKÜLTESİ</h4>
